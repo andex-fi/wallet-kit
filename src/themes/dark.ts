@@ -3,32 +3,30 @@ import { getThemeWithFallback } from "./helpers";
 const theme = {
   common: {
     text: {
-      color: "#F2F2F2",
+      color: "#FFFFFF",
     },
     backdrop: {
-      color: "#1C1C26",
+      color: "rgba(0, 0, 0, 0.2)",
       opacity: 0.5,
-      backdropFilter: "blur(5px)",
+      backdropFilter: "blur(9px)",
     },
   },
   popup: {
     background: {
-      color: "#1C1C26",
-      backdropFilter: "blur(5px)",
+      color: "#19102D",
+      backdropFilter: "blur(9px)",
     },
     border: {
       width: 2,
-      color:
-        "linear-gradient(317.16deg, rgba(81, 100, 154, 0.6) 78.4%, #68F7AA 105.77%)",
-
-      borderRadius: 16,
+      color: "#19102D",
+      borderRadius: 24,
     },
     shadow: {
-        boxShadow: "2px 2px 4px rgba(0, 0, 0, 0.3)",
+        boxShadow: "0px 16px 64px rgba(55, 0, 98, 0.2)",
     },
     closeCross: {
       color: "#436177",
-      hoverColor: "#68F7AA",
+      hoverColor: "#FFFFFF",
     },
     badgeColor: "#3B4363",
     scroll: {
@@ -37,15 +35,15 @@ const theme = {
   },
   item: {
     background: {
-      color: "#3A3A51",
+      color: "#34184B",
     },
     border: {
-      width: 2,
+      width: 0,
       borderWidth: 0,
       borderHoverColor: "transparent",
-      color: "rgba(72, 84, 125, 1)",
-      hoverColor: "#68F7AA",
-      pressedColor: "rgb(104, 247, 170)",
+      color: "#34184B",
+      hoverColor: "#9368f7",
+      pressedColor: "#9368f7",
     },
     warning: {
       background: {
