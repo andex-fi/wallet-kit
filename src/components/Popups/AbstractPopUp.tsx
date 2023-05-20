@@ -400,11 +400,11 @@ const AbstractPopUp = ({
               <SBadge color={themeObject.popup.badgeColor}>
                 powered by{" "}
                 <a
-                  href="https://web3.space/venom-connect"
+                  href="https://github.com/andex-fi/wallet-kit"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <b>web3.space</b>
+                  <b>Andex Protocol</b>
                 </a>
               </SBadge>
             </SChildren>
