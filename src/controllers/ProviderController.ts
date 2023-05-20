@@ -232,7 +232,6 @@ export class ProviderController {
               const packageOptionsStandalone =
                 userOptionsStandalone || defaultOptionsStandalone || {};
 
-              // задаём 1000 как дефолт ид венома
               packageOptions.checkNetworkId = this.checkNetworkId;
               packageOptions.checkNetworkName = this.checkNetworkName;
 

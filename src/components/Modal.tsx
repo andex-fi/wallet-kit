@@ -10,7 +10,7 @@ import {
   SimpleFunction,
   ThemeConfig,
 } from "../types";
-import { VENOM_CONNECT_MODAL_ID } from "./WalletProvider";
+import { VENOM_CONNECT_MODAL_ID } from "./VenomConnect";
 import AbstractPopUp, { SECONDS } from "./Popups/AbstractPopUp";
 import { CardManager } from "./Cards/CardManager";
 import { QrCard } from "./Cards/InnerCard";

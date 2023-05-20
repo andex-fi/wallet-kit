@@ -1,2 +1,2 @@
-export * from './WalletProvider'
+export * from './VenomConnect'
 export * from './Modal'
