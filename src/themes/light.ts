@@ -3,24 +3,26 @@ import { getThemeWithFallback } from "./helpers";
 const theme = {
   common: {
     text: {
-      color: "#3A3A51",
+      color: "#45384f",
     },
     backdrop: {
-      color: "#F8F8F8",
+      color: "#ebf1ff",
       opacity: 0.5,
       backdropFilter: "blur(5px)",
     },
   },
   popup: {
     background: {
-      color: "#F8F8F8",
+      color: "#fbfafc",
       backdropFilter: "blur(5px)",
     },
     border: {
       width: 2,
-      color:
-        "linear-gradient(317.16deg, rgba(81, 100, 154, 0.6) 78.4%, #68F7AA 105.77%)",
+      color: "#fbfafc",
       borderRadius: 16,
+    },
+    shadow: {
+        boxShadow: "0px 16px 64px rgba(55, 0, 98, 0.2)",
     },
     closeCross: {
       color: "#8BA9BC",

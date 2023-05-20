@@ -371,7 +371,6 @@ export const Modal = ({
         title: "Error",
       };
 
-    // ссылки на магазины скачивания
     return {
       type: Slide.innerCard,
       element: (

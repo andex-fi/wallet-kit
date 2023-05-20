@@ -23,6 +23,9 @@ const theme = {
 
       borderRadius: 16,
     },
+    shadow: {
+        boxShadow: "2px 2px 4px rgba(0, 0, 0, 0.3)",
+    },
     closeCross: {
       color: "#436177",
       hoverColor: "#68F7AA",

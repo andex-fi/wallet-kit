@@ -109,6 +109,8 @@ const SModalCardWrapper = styled.div<ModalCardWrapperStyleProps>`
   max-height: 100%;
   margin: 10px;
   overflow: hidden;
+  
+  box-shadow: 0px 16px 64px rgba(55, 0, 98, 0.2);
 
   display: flex;
   flex-direction: column;

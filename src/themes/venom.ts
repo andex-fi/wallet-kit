@@ -23,6 +23,9 @@ const theme = {
         "linear-gradient(317.16deg, rgba(81, 100, 154, 0.6) 78.4%, #68F7AA 105.77%)",
       borderRadius: 16,
     },
+    shadow: {
+        boxShadow: "2px 2px 4px rgba(0, 0, 0, 0.3)",
+    },
     closeCross: {
       color: "#FFFFFF",
       hoverColor: "#68F7AA",

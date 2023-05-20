@@ -23,6 +23,9 @@ type BackdropTheme = {
       color: string;
       borderRadius: number;
     };
+    shadow: {
+        boxShadow: string,
+    },
     text: {
       color: string;
     };
