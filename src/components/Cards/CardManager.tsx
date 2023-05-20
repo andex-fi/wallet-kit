@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { browserName, isIOS, isMobile } from "react-device-detect";
-import { checkIsCurrentBrowser } from "../helpers/utils";
+import { checkIsCurrentBrowser } from "../../helpers/utils";
 import { ProviderCard, ProviderCardProps } from "./ProviderCard";
 
 type CardManagerProps = Omit<

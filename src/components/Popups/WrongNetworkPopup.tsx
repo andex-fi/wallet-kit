@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ThemeConfig } from "../types";
+import { ThemeConfig } from "../../types";
 
 type Color = {
   color: string;

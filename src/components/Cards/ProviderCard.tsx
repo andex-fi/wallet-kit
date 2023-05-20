@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { ConnectorType, Theme, WalletDisplay, WayToConnect } from "../types";
-import { filterNameArr, notSupported } from "./NotSupported";
+import { ConnectorType, Theme, WalletDisplay, WayToConnect } from "../../types";
+import { filterNameArr, notSupported } from "../NotSupported";
 
 type Wrapper = {};
 const SWrapper = styled.div<Wrapper>`

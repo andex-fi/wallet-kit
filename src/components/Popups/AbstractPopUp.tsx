@@ -2,8 +2,8 @@ import { rgba } from "polished";
 import { useEffect, useState } from "react";
 import { isDesktop } from "react-device-detect";
 import styled from "styled-components";
-import { SimpleFunction, Theme, ThemeConfig } from "../types";
-import { CloseCross } from "./CloseCross";
+import { SimpleFunction, Theme, ThemeConfig } from "../../types";
+import { CloseCross } from "../CloseCross";
 
 export const SECONDS: number = 0.25;
 
@@ -287,6 +287,7 @@ type AbstractPopUpProps = {
   };
   children?: JSX.Element;
 };
+
 const AbstractPopUp = ({
   show: outerShow,
   hide,

@@ -11,10 +11,10 @@ import {
   ThemeConfig,
 } from "../types";
 import { VENOM_CONNECT_MODAL_ID } from "./WalletProvider";
-import AbstractPopUp, { SECONDS } from "./AbstractPopUp";
-import { CardManager } from "./CardManager";
-import { QrCard } from "./InnerCard";
-import { WrongNetworkPopup } from "./WrongNetworkPopup";
+import AbstractPopUp, { SECONDS } from "./Popups/AbstractPopUp";
+import { CardManager } from "./Cards/CardManager";
+import { QrCard } from "./Cards/InnerCard";
+import { WrongNetworkPopup } from "./Popups/WrongNetworkPopup";
 
 const DoneButton = styled.div`
   background: #11a97d;
