@@ -20,7 +20,7 @@ const ShowNetwork = styled.div<Color>`
   justify-content: center;
 
   border-radius: 8px;
-  font-family: "Poppins";
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -40,7 +40,7 @@ const ChangeWalletButton = styled.div`
   align-items: center;
   justify-content: center;
 
-  font-family: "Poppins";
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;

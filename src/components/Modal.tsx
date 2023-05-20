@@ -30,7 +30,7 @@ const DoneButton = styled.div`
   justify-content: center;
   margin-top: 20px;
 
-  font-family: "Poppins";
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -159,14 +159,13 @@ export const Modal = ({
   //   options.length > 1 ? Slide.walletsList : Slide.currentWallet;
   const getInitialSlide = () => Slide.currentWallet;
 
-  // выбираем начальный кошелёк
   const getInitialWalletOption = () =>
     getInitialSlide() === Slide.currentWallet ? options[0] : undefined;
 
   // const getInitialWalletWaysToConnect = () =>
   //   getInitialWalletOption()?.walletWaysToConnect;
 
-  // выбираем способы подключения
+  
   const getInitialWalletWaysToConnect = () => getWalletWaysToConnect(undefined);
 
   const getInitialWalletWayToConnect = () => {
@@ -183,7 +182,7 @@ export const Modal = ({
   };
 
   const [slide, setSlide] = useState(getInitialSlide);
-  // не актуален
+  
   const [walletId, setWalletId] = useState<string | undefined>();
   const [walletWaysToConnect, setWalletWaysToConnect] = useState<
     ProviderOptionsListWithOnClick[0]["walletWaysToConnect"] | undefined
@@ -252,7 +251,7 @@ export const Modal = ({
     onCurrentWalletSelectorClick(id);
   };
 
-  // выбран способ коннекта
+
   const onCurrentCardItemClick = (name: string, id: string, cb: () => void) => {
     const _walletWayToConnect = walletWaysToConnect?.find(
       (_walletWayToConnect) =>
@@ -270,8 +269,6 @@ export const Modal = ({
     }
   };
 
-  // первый шаг с кошельками
-  // сейчас не используется
   const walletCardList: Case = useMemo(() => {
     return {
       type: Slide.walletsList,
@@ -293,22 +290,20 @@ export const Modal = ({
       ),
       title: (
         <>
-          Choose the wallet to
-          <br />
-          connect:
+          Select Wallet
         </>
       ),
     };
   }, [options, themeConfig.theme]);
 
-  // это уже конкретные варианты 2го уровня
+  
   const currentWalletCards: Case = useMemo(() => {
     // const walletName = options.find(({id}) => id === walletId)?.wallet.name;
 
     return {
       type: Slide.currentWallet,
       element: (
-        // список на главной
+        
         <SProviders>
           {walletWaysToConnect?.map(
             ({ id, name, logo, logoWhite, onClick, type, options: x }, i) => {
@@ -358,7 +353,7 @@ export const Modal = ({
           )}
         </SProviders>
       ),
-      title: <>Choose the way to connect:</>,
+      title: <>Select Wallet</>,
       // title: <>Choose the way to connect {walletName}:</>,
     };
   }, [options, themeConfig.theme, walletId, walletWaysToConnect]);
@@ -448,7 +443,7 @@ export const Modal = ({
             style={{
               margin: "24px 0px 2px",
               cursor: "pointer",
-              color: "#11A97D",
+              color: "#6211a9",
             }}
             onClick={goBack}
           >
@@ -522,7 +517,7 @@ export const Modal = ({
   return (
     <>
       <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
         rel="stylesheet"
       />
       <style>

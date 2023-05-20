@@ -17,7 +17,7 @@ const SBackdrop = styled.div<BackdropStyleProps>`
   transition: all ${SECONDS / 2}s ease-in-out;
 
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
   color: ${({
@@ -188,12 +188,12 @@ const SCardHeader = styled.div<CardHeader>`
   align-items: flex-start;
   text-align: left;
 
-  font-weight: ${({ fontWeight }) => fontWeight || 600};
+  font-weight: ${({ fontWeight }) => fontWeight || 700};
   font-size: ${({ fontSize }) =>
-    (typeof fontSize === "number" ? `${fontSize}px` : fontSize) || "24px"};
+    (typeof fontSize === "number" ? `${fontSize}px` : fontSize) || "28px"};
   line-height: ${({ lineHeight }) =>
     (typeof lineHeight === "number" ? `${lineHeight}px` : lineHeight) ||
-    "28px"};
+    "34px"};
 `;
 
 type TextAlign = {
