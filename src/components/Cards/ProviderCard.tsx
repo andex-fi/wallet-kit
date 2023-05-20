@@ -301,7 +301,7 @@ export const ProviderCard = ({
     </>
   );
 
-  // это плашка под экстеншенами в случае их отсутствия
+  
   const NotSupportedText = (
     <>
       {!isCurrentBrowser && (
@@ -388,7 +388,7 @@ export const ProviderCard = ({
   };
 
   const getCardLink = () => {
-    // чужой браузер, вернём ссылку на установку
+    
     if (connectorType === "extension" && !isCurrentBrowser) {
       return getLinkFromArr(options?.installExtensionLink)?.link as
         | string
@@ -429,7 +429,7 @@ export const ProviderCard = ({
     return "";
   };
 
-  // список способов подключения
+  
   return (
     <SWrapper onClick={onClick}>
       {isShowBadBrowserWarning && NotSupportedBadge}
