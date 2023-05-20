@@ -15,6 +15,7 @@ import AbstractPopUp, { SECONDS } from "./Popups/AbstractPopUp";
 import { CardManager } from "./Cards/CardManager";
 import { QrCard } from "./Cards/InnerCard";
 import { WrongNetworkPopup } from "./Popups/WrongNetworkPopup";
+import { Provider } from "everscale-inpage-provider";
 
 const DoneButton = styled.div`
   background: #11a97d;
@@ -40,8 +41,8 @@ declare global {
   // tslint:disable-next-line
   interface Window {
     // ever wallet
-    __hasEverscaleProvider?: boolean;
-    __ever?: any;
+    __hasEverscaleProvider: boolean | undefined;
+    __ever: Provider | undefined;
 
     // venom wallet
     __hasVenomProvider?: boolean;
