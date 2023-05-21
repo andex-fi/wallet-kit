@@ -1,12 +1,12 @@
 import { getValueByKey } from ".";
 import { ProviderOptions } from "../../types";
-import Apple from "../logos/Apple.svg";
-import ChromeExtension from "../logos/ChromeExtensionVenom.svg";
-import FirefoxExtension from "../logos/FirefoxExtensionVenom.svg";
-import MobileApp from "../logos/MobileAppVenom.svg";
-import MobileAppWhite from "../logos/MobileAppVenomWhite.svg";
-import PlayMarket from "../logos/PlayMarket.svg";
-import VenomWalletLogo from "../logos/VenomWalletLogo.svg";
+import Apple from "../../assets/logos/Apple.svg";
+import ChromeExtension from "../../assets/logos/ChromeExtensionVenom.svg";
+import FirefoxExtension from "../../assets/logos/FirefoxExtensionVenom.svg";
+import MobileApp from "../../assets/logos/MobileAppVenom.svg";
+import MobileAppWhite from "../../assets/logos/MobileAppVenomWhite.svg";
+import PlayMarket from "../../assets/logos/PlayMarket.svg";
+import VenomWalletLogo from "../../assets/logos/VenomWalletLogo.svg";
 
 export { VenomWalletLogo };
 

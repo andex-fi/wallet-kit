@@ -1,3 +1,5 @@
+import React from "react";
+
 type JsxOrUndefined = () => JSX.Element | undefined;
 
 export const MobileApp: JsxOrUndefined = () => {

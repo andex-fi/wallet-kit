@@ -1,12 +1,12 @@
 import { getValueByKey } from ".";
 import { ProviderOptions } from "../../types";
-import Apple from "../logos/Apple.svg";
-import ChromeExtension from "../logos/ChromeExtensionEver.svg";
-import EverWalletLogo from "../logos/EverWalletLogo.svg";
-import FirefoxExtension from "../logos/FirefoxExtensionEver.svg";
-import MobileApp from "../logos/MobileAppEver.svg";
-import MobileAppWhite from "../logos/MobileAppEverWhite.svg";
-import PlayMarket from "../logos/PlayMarket.svg";
+import Apple from "../../assets/logos/Apple.svg";
+import ChromeExtension from "../../assets/logos/ChromeExtensionEver.svg";
+import EverWalletLogo from "../../assets/logos/EverWalletLogo.svg";
+import FirefoxExtension from "../../assets/logos/FirefoxExtensionEver.svg";
+import MobileApp from "../../assets/logos/MobileAppEver.svg";
+import MobileAppWhite from "../../assets/logos/MobileAppEverWhite.svg";
+import PlayMarket from "../../assets/logos/PlayMarket.svg";
 
 export { EverWalletLogo };
 
