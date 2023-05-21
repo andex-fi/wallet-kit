@@ -4,7 +4,7 @@ import { Address, ProviderRpcClient } from "everscale-inpage-provider";
 import { EverscaleStandaloneClient } from "everscale-standalone-client";
 import { useEffect, useState } from "react";
 
-import { VenomConnect } from "./components";
+import { VenomConnect } from ".";
 
 import testContractAbi from "./abi/test.abi.json";
 
