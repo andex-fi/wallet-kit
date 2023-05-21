@@ -24,6 +24,7 @@ import {
   UserProvidersOptions,
   VenomConnectOptions,
 } from "../types";
+import React from "react";
 
 export const libName = "VenomConnect";
 
@@ -65,7 +66,7 @@ const getDefaultVenomNetworkNameById = (networkId: number | number[]) => {
   class VenomConnect {
     private show: boolean = false;
   
-    private checkNetworkId: number | number[];
+    public checkNetworkId: number | number[];
     private checkNetworkName: string;
     private error: string | undefined = undefined;
   
@@ -163,9 +164,9 @@ const getDefaultVenomNetworkNameById = (networkId: number | number[]) => {
   
     // --------------- PUBLIC METHODS --------------- //
   
-    private async toggleModal(): Promise<void> {
+    /*private async toggleModal(): Promise<void> {
       await this._toggleModal();
-    }
+    }*/
   
     /**
      * Toggle the backdrop when performing an action in the extension window

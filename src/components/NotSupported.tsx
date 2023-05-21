@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Theme } from "../types";
+import React from "react";
 
 type Badge = {
   item: Theme["item"];

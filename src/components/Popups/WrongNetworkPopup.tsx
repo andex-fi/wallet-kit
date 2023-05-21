@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { ThemeConfig } from "../../types";
+import React from "react";
 
 type Color = {
   color: string;

@@ -70,7 +70,7 @@ export const checkIsCurrentBrowser = (isCurrentBrowser?: any) => {
     ) {
       // format: ["isChrome", "isDesktop"]
     } else if (isCurrentBrowser && Array.isArray(isCurrentBrowser)) {
-      _isCurrentBrowser = isCurrentBrowser?.reduce((r, item, i) => {
+      _isCurrentBrowser = isCurrentBrowser?.reduce((r, item, /*i*/) => {
         // format: [["isChrome", "isDesktop"], ["isFirefox", "isDesktop"]]
         return (
           r ||

@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import styled from "styled-components";
 import { checkIsCurrentBrowser } from "../helpers/utils";
 import AppStore from "../images/AppStore.svg";

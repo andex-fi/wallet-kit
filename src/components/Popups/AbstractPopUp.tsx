@@ -1,5 +1,5 @@
 import { rgba } from "polished";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { isDesktop } from "react-device-detect";
 import styled from "styled-components";
 import { SimpleFunction, Theme, ThemeConfig } from "../../types";
@@ -293,7 +293,7 @@ type AbstractPopUpProps = {
 const AbstractPopUp = ({
   show: outerShow,
   hide,
-  pause,
+  // pause,
   goBack,
   onClose,
   themeObject,

@@ -1,6 +1,7 @@
 import QRCode from "react-qr-code";
 import styled from "styled-components";
 import { ThemeConfig } from "../../types";
+import React from "react";
 
 type QrBox = {
   themeConfig: ThemeConfig;

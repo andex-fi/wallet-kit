@@ -1,3 +1,4 @@
+import React from "react";
 import styled from "styled-components";
 import { ConnectorType, Theme, WalletDisplay, WayToConnect } from "../../types";
 import { filterNameArr, notSupported } from "../NotSupported";
@@ -268,7 +269,7 @@ export const ProviderCard = ({
   options,
   isFirst,
   isBadBrowser,
-  allBrowsersNames,
+  // allBrowsersNames,
   browsersNames,
 }: ProviderCardProps) => {
   const browserName = browserNameRaw?.toLocaleLowerCase()?.trim();

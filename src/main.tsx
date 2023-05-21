@@ -75,7 +75,7 @@ const initVenomConnect = async () => {
 
 const themesList = ["light", "dark", "venom"];
 
-const App = () => {
+function App() {
     const [venomConnect, setVenomConnect] = useState<any>();
     const [venomProvider, setVenomProvider] = useState<any>();
     const [address, setAddress] = useState();
