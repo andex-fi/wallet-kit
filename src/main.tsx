@@ -4,7 +4,7 @@ import { Address, ProviderRpcClient } from "everscale-inpage-provider";
 import { EverscaleStandaloneClient } from "everscale-standalone-client";
 import { useEffect, useState } from "react";
 
-import { VenomConnect } from "@andex/wallet-kit";
+import { VenomConnect } from ".";
 
 import testContractAbi from "./abi/test.abi.json";
 
@@ -22,11 +22,12 @@ const initTheme = "light" as const;
 const standaloneFallback = () =>
   EverscaleStandaloneClient.create({
     connection: {
-      id: 1000,
-      group: "venom_testnet",
+      id: 1002,
+      group: "venom_devnet",
       type: "jrpc",
       data: {
-        endpoint: "https://jrpc.venom.foundation/rpc",
+        endpoint: "https://jrpc-devnet.venom.foundation/"
+        // endpoint: "https://jrpc.venom.foundation/rpc",
       },
     },
   });
@@ -34,7 +35,7 @@ const standaloneFallback = () =>
 const initVenomConnect = async () => {
   return new VenomConnect({
     theme: initTheme,
-    checkNetworkId: 1000,
+    checkNetworkId: 1002,
     providersOptions: {
       venomwallet: {
         links: {},

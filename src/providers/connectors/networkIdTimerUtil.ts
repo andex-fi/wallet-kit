@@ -11,7 +11,7 @@ export const setupNetworkIdTimer = (
       const state = await provider?.getProviderState?.();
       
       let isAllowedId = true;
-      if (allowedNetworkIds) {
+      if (allowedNetworkIds !== undefined) {
         if (Array.isArray(allowedNetworkIds)) {
           isAllowedId = !!allowedNetworkIds.find(
             (id) => state.networkId === id

@@ -58,6 +58,8 @@ Available formats:
 
 ### Expected network Name (`checkNetworkName`)
 
+! Use value 0 to work with local-node !
+
 Here you need to set the correct network Name for your site to work.
 
 Available format:
