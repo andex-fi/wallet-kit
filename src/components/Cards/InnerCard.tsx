@@ -52,7 +52,7 @@ type QRCardProps = {
   themeConfig: ThemeConfig;
 };
 export const QrCard = ({ themeConfig, qr }: QRCardProps) => {
-  return !!qr ? (
+  return qr ? (
     <SQrBox themeConfig={themeConfig}>
       <QRCode
         value={qr}

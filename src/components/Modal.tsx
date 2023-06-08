@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useMemo, useState } from "react";
 import styled from "styled-components";
@@ -15,7 +17,7 @@ import AbstractPopUp, { SECONDS } from "./Popups/AbstractPopUp";
 import { CardManager } from "./Cards/CardManager";
 import { QrCard } from "./Cards/InnerCard";
 import { WrongNetworkPopup } from "./Popups/WrongNetworkPopup";
-import { Provider } from "everscale-inpage-provider";
+import { Provider } from "@andex/provider";
 
 const DoneButton = styled.div`
   background: #11a97d;
@@ -41,12 +43,12 @@ declare global {
   // tslint:disable-next-line
   interface Window {
     // ever wallet
-    __hasEverscaleProvider: boolean | undefined;
+    __hasEverProvider: boolean | undefined;
     __ever: Provider | undefined;
-
+    
     // venom wallet
-    __hasVenomProvider?: boolean;
-    __venom?: any;
+    __hasVenomProvider: boolean | undefined;
+    __venom: Provider | undefined;
 
     // lib
     updateVenomModal: any;

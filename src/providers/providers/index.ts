@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import { ProviderOptions } from "../../types";
 import { everDefaultLinks } from "./everwallet";
 import {

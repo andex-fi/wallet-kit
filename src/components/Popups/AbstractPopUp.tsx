@@ -5,7 +5,8 @@ import styled from "styled-components";
 import { SimpleFunction, Theme, ThemeConfig } from "../../types";
 import { CloseCross } from "../CloseCross";
 
-export const SECONDS: number = 0.25;
+// eslint-disable-next-line react-refresh/only-export-components
+export const SECONDS = 0.25;
 
 type BackdropStyleProps = {
   show: boolean;

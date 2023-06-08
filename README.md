@@ -158,7 +158,7 @@ const initVenomConnect = async () => {
             },
             packageOptionsStandalone: {
               fallback: () =>
-                EverscaleStandaloneClient.create({
+                VenomStandaloneClient.create({
                   connection: {
                     id: 1,
                     group: "venom_mainnet",

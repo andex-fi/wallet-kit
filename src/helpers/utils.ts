@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import * as deviceDetect from "react-device-detect";
 
 type Logger = {
@@ -11,7 +13,7 @@ export const log = ({ type = "log", key, value }: Logger) => {
 
 export const getKey = (name: string, type: string) => `${name}/${type}`;
 
-const disableLogs: boolean = true;
+const disableLogs = true;
 
 type MakeMove = {
   logger: {

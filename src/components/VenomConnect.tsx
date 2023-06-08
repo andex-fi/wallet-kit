@@ -1,3 +1,8 @@
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
+/* eslint-disable no-async-promise-executor */
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+/* eslint-disable react-refresh/only-export-components */
 import { isIOS, isMobile } from "react-device-detect";
 import { createRoot, Root } from "react-dom/client";
 import { Modal } from ".";
@@ -66,7 +71,7 @@ const getDefaultVenomNetworkNameById = (networkId: number | number[]) => {
   };
 
   class VenomConnect {
-    private show: boolean = false;
+    private show = false;
   
     public checkNetworkId: number | number[];
     private checkNetworkName: string;
@@ -371,7 +376,7 @@ const getDefaultVenomNetworkNameById = (networkId: number | number[]) => {
     /**
      * The function of getting a standalone provider by its ID. `getStandalone("venomwallet")` or `getStandalone()` By default, the ID is **venomwallet**.
      */
-    public getStandalone(walletId: string = "venomwallet") {
+    public getStandalone(walletId = "venomwallet") {
       return this.providerController.getStandalone(walletId);
     }
   
@@ -416,7 +421,7 @@ const getDefaultVenomNetworkNameById = (networkId: number | number[]) => {
     private async disconnect() {
       try {
         await this.currentProvider?._api?.disconnect?.();
-      } catch (error) {}
+      } catch (error) { /* empty */ }
     }
   
     private renderModal() {
@@ -433,7 +438,7 @@ const getDefaultVenomNetworkNameById = (networkId: number | number[]) => {
   
       const root = oldRoot || (oldRoot = createRoot(container!));
   
-      let optionsIds: (string | null)[] = Array.from(
+      const optionsIds: (string | null)[] = Array.from(
         new Set(this.options.map(({ id }) => id))
       );
   

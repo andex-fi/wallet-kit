@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import {
   CONNECT_EVENT,
   ERROR_EVENT,
@@ -37,7 +39,7 @@ export const getPromiseRaw = (
               return;
             }
             let nTries = 0; // число попыток, иначе он будет бесконечно, может это вынести в конфиг
-            let interval = setInterval(() => {
+            const interval = setInterval(() => {
               if (windowObject.__venom) {
                 clearInterval(interval);
                 resolve(windowObject.__venom);
@@ -62,7 +64,7 @@ export const getPromiseRaw = (
               return;
             }
             let nTries = 0; // число попыток, иначе он будет бесконечно, может это вынести в конфиг
-            let interval = setInterval(() => {
+            const interval = setInterval(() => {
               if (windowObject.__ever) {
                 clearInterval(interval);
                 resolve(windowObject.__ever);
@@ -179,6 +181,7 @@ export class ProviderController {
           links,
           walletWaysToConnect,
           defaultWalletWaysToConnect,
+        // eslint-disable-next-line no-unsafe-optional-chaining
         } = this.providerOptions?.[id];
 
         const types = walletWaysToConnect?.map(({ type }) => type);

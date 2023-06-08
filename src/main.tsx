@@ -1,7 +1,9 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable react-refresh/only-export-components */
 import React from "react";
 import ReactDOM from "react-dom/client"
-import { Address, ProviderRpcClient } from "everscale-inpage-provider";
-import { EverscaleStandaloneClient } from "everscale-standalone-client";
+import { Address, ProviderRpcClient } from "@andex/provider";
+import { VenomStandaloneClient } from "@andex/client";
 import { useEffect, useState } from "react";
 
 import { VenomConnect } from ".";
@@ -20,7 +22,7 @@ import {
 const initTheme = "light" as const;
 
 const standaloneFallback = () =>
-  EverscaleStandaloneClient.create({
+  VenomStandaloneClient.create({
     connection: {
       id: 1002,
       group: "venom_devnet",
@@ -358,7 +360,7 @@ function App() {
         </Container>
       </Box>
     );
-  };
+  }
 
   ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     <React.StrictMode>

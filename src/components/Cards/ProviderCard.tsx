@@ -1,3 +1,5 @@
+/* eslint-disable no-case-declarations */
+/* eslint-disable @typescript-eslint/ban-types */
 import React from "react";
 import styled from "styled-components";
 import { ConnectorType, Theme, WalletDisplay, WayToConnect } from "../../types";

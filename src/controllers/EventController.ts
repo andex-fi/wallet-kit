@@ -32,8 +32,9 @@ export class EventController {
     }
   }
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   public trigger(event: string, result?: any): void {
-    let eventCallbacks: EventCallback[] = this._eventCallbacks.filter(
+    const eventCallbacks: EventCallback[] = this._eventCallbacks.filter(
       (eventCallback: EventCallback) => eventCallback.event === event
     );
 

@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import styled from "styled-components";
 import { Theme } from "../types";
 import React from "react";
@@ -6,6 +7,7 @@ type Badge = {
   item: Theme["item"];
   isVisualHide: boolean;
 };
+
 const SBadge = styled.div<Badge>`
   opacity: ${({ isVisualHide }) => (isVisualHide ? 0 : 1)};
 
@@ -43,6 +45,7 @@ export enum Browsers {
 }
 
 export const filterNameArr = (nameArr: string[]) => {
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore
   return nameArr?.map((n) => Browsers[n] || null)?.filter((n) => !!n);
 };

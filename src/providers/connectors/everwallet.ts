@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { toggleExtensionWindow } from "../../helpers/backdrop";
 import { getKey as getKeyRaw, log, makeMove } from "../../helpers/utils";
 import { Callbacks } from "../../types";
@@ -159,6 +160,7 @@ const connectToEverWallet = async (
         key,
       },
       async () => {
+        // eslint-disable-next-line no-unsafe-optional-chaining
         const { accountInteraction } = await everProvider?.requestPermissions({
           permissions,
         });
@@ -257,7 +259,7 @@ const goByQRCode = () => {
     });
 
     return undefined as any;
-  } catch (error) {}
+  } catch (error) { /* empty */ }
 };
 
 const goByDeepLinkIOS = () => {
@@ -270,7 +272,7 @@ const goByDeepLinkIOS = () => {
     });
 
     return undefined as any;
-  } catch (error) {}
+  } catch (error) { /* empty */ }
 };
 
 const goByDeepLinkAndroid = () => {
@@ -283,7 +285,7 @@ const goByDeepLinkAndroid = () => {
     });
 
     return undefined as any;
-  } catch (error) {}
+  } catch (error) { /* empty */ }
 };
 
 const everWallet = {
