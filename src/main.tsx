@@ -24,11 +24,11 @@ const initTheme = "light" as const;
 const standaloneFallback = () =>
   VenomStandaloneClient.create({
     connection: {
-      id: 1002,
-      group: "venom_devnet",
+      id: 1000,
+      group: "venom_testnet",
       type: "jrpc",
       data: {
-        endpoint: "https://jrpc-devnet.venom.foundation/"
+        endpoint: "https://jrpc-testnet.venom.foundation/"
         // endpoint: "https://jrpc.venom.foundation/rpc",
       },
     },
@@ -37,7 +37,7 @@ const standaloneFallback = () =>
 const initVenomConnect = async () => {
   return new VenomConnect({
     theme: initTheme,
-    checkNetworkId: 1002,
+    checkNetworkId: 1000,
     providersOptions: {
       venomwallet: {
         links: {},
